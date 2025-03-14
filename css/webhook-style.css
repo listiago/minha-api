@@ -1,0 +1,103 @@
+/* 🔹 Ajuste na lista de webhooks */
+.page-webhook-template .webhook-list {
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* 🔹 Melhorando a aparência da lista de webhooks */
+.page-webhook-template .webhook-item {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+}
+
+/* 🔹 Separação das informações */
+.page-webhook-template .webhook-info {
+    width: 100%;
+    word-break: break-word;
+}
+
+/* 🔹 Ajuste no link para caber melhor */
+.page-webhook-template .webhook-link {
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.page-webhook-template .webhook-link:hover {
+    text-decoration: underline;
+}
+
+/* 🔹 Botões de ação responsivos */
+.page-webhook-template .webhook-actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+/* 🔹 Estilizando melhor os botões */
+.page-webhook-template .webhook-actions button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.page-webhook-template .edit-webhook {
+    background: #f0ad4e;
+    color: white;
+}
+
+.page-webhook-template .delete-webhook {
+    background: #d9534f;
+    color: white;
+}
+
+.page-webhook-template .edit-webhook:hover,
+.page-webhook-template .delete-webhook:hover {
+    opacity: 0.8;
+}
+
+/* 🔹 Melhorando responsividade */
+@media (max-width: 600px) {
+    .page-webhook-template .webhook-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .page-webhook-template .webhook-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .page-webhook-template .webhook-actions button {
+        width: 100%;
+    }
+}
+
+.webhook-details {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.webhook-actions {
+    margin-top: 10px;
+}
+
+.webhook-actions button {
+    margin-right: 5px;
+}
+
